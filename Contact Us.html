@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function validateForm(event) {
+   	<script>        function validateForm(event) {
             const name = document.getElementById('name').value;
             const phone = document.getElementById('phone').value;
 
@@ -32,23 +31,34 @@
     </script>
 </head>
 
-<body> 
+<body>
    <!-- Main Website Content -->
     <header id="main-content">
         <!-- Welcome Section -->
-         <div class="wealcome-content">
-                <h2>Welcome to Digital Services</h2>
-                <h3>Your one-stop solution for Government and Real Estate Services</h3>
-            </div>
+         <div class="welcome-content">
+            <h2>Welcome to Digital Services</h2>
+            <h3>Your one-stop solution for Government and Real Estate Services</h3>
+        </div>
     </header>
-
-  		   
+   
     <!-- Main Contact Us Section -->
     <div class="contact-us">
+        <!-- Part 1: Direct Contact Information -->
         <section class="contact">
-            <h2>Get in Touch</h2>
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" onsubmit="return validateForm(event);">
-                <input type="hidden" name="access_key" value="6cf7a959-e311-4a7c-beec-15c24879039b"> <!-- Replace with your actual Web3Forms access key -->
+            <h3>Contact Us Directly</h3>
+            <div class="contact-details">
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p><strong>Email:</strong> <a href="mailto:support@digitalservices.com">support@digitalservices.com</a></p>
+                <p><strong>Address:</strong> 123 Main Street, Cityville, Country 12345</p>
+                <p><strong>Working Hours:</strong> Monday - Friday, 9:00 AM - 6:00 PM</p>
+            </div>
+        </section>
+
+        <!-- Part 2: Get a Callback -->
+        <section class="contact">
+            <h3>Fill Out the Form and We'll Contact You</h3>
+            <form action="https:/api.web3forms.com/submit" method="POST" class="contact-form" onsubmit="return validateForm(event);">
+                <input type="hidden" name="access_key" value="6cf7a959-e311-4a7c-beec-15c24879039b">
                 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -63,25 +73,27 @@
             </form>
         </section>
 
+        <!-- Social Media Links -->
         <div class="social-links">
             <h3>Follow Us on Social Media</h3>
-            <a href="[Facebook Link]" target="_blank">Facebook</a>
-            <a href="[Twitter Link]" target="_blank">Twitter</a>
-            <a href="[Instagram Link]" target="_blank">Instagram</a>
-            <a href="[LinkedIn Link]" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         </div>
     </div>
-<!-- Footer Section -->
-<footer id="main-footer">
-    <div class="footer-content">
-        <p>&copy; 2024 Digital Services. All rights reserved.</p>
-        <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
-</footer>
+
+    <!-- Footer Section -->
+    <footer id="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Digital Services. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 </html>
