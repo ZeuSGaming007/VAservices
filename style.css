@@ -688,8 +688,8 @@ body {
 }
 
 header {
-    background-color: #007bff; /* Blue background for the header */
-    color: white;
+    background-color: white; /* Blue background for the header */
+    color: black;
     padding: 10px 20px;
     width: 100%;
     text-align: center;
