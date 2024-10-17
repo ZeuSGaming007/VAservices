@@ -9,11 +9,15 @@
         function checkOtherService() {
             const serviceDropdown = document.getElementById('service');
             const otherServiceContainer = document.getElementById('other-service-container');
-            
-            if (serviceDropdown.value === 'other') {
+            const otherServiceInput = document.getElementById('other-service');
+
+            if (serviceDropdown.value === 'Other') {
                 otherServiceContainer.style.display = 'block';
+                otherServiceInput.setAttribute('required', 'required'); // Make the field required
             } else {
                 otherServiceContainer.style.display = 'none';
+                otherServiceInput.removeAttribute('required'); // Remove the required attribute if not needed
+                otherServiceInput.value = ''; // Clear the value if the field is hidden
             }
         }
 
